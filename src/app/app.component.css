@@ -1,0 +1,33 @@
+.context-page {
+    position: absolute;
+    background-color: #090909ff;
+    top: 0;
+    bottom: 0;
+    left: 12%;
+    right: 12%;
+    z-index: -1;
+}
+
+#bottomBar {
+    display: table;
+    position: absolute;
+    background-color: #181818ff;
+    color: #747474ff;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    -webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.41);
+}
+
+#bottomBar h4 {
+    display: table-cell;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    vertical-align: middle;
+    text-align: right;
+    height: 100%;
+    width: fit-content;
+    right: 0%;
+    padding-right: 25px;
+}

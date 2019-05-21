@@ -1,0 +1,127 @@
+.menubar {
+    background-color: #181818ff;
+    height: 80px;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.41);
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+.menubar-navlinks {
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    cursor: hand;
+    height: 100%;
+    width: auto;
+    color: #7b7b7bff;
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+
+.menubar-navlinks:focus {
+    outline: none;
+}
+
+#textAlignDiv {
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+#bottomRedBar {
+    display: none;
+    background-color: #ca0101ff;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+}
+
+li:hover #bottomRedBar {
+    display: block;
+}
+
+.menubar-navlinks:active {
+    background-image: white;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.menubar-navlinks:hover {
+    background-image: linear-gradient(to top, #000000c4, #00000000 40%);
+    cursor: pointer;
+    cursor: hand;
+}
+
+.marvel-logo {
+    background-color: white;
+    height: 100%;
+    margin-left: 5%;
+    float: left;
+}
+
+ul {
+    height: 100%;
+    width: fit-content;
+    list-style: none;
+    list-style-type: none;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 350px;
+}
+  
+li {
+    display:inline-block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* SEARCH BAR */
+#searchDiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 55%;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#searchDiv button {
+    background-color: white;
+    background-image: url("../../assets/searchIcon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    height: 100%;
+    width: 80px;
+    border-radius: 0px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.searchHeroInput {
+    background-color: #2e2e2eff;
+    color: #858585ff;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    height: 100%;
+    width: 450px;
+    float: left;
+    font-size: 20px;
+}
+
+.searchHeroInput:focus {
+    background-color: #eaeaeaff;
+}
