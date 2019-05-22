@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { CharactersListingComponent } from './characters-listing/characters-listing.component';
 import { CharacterBadgeComponent } from './character-badge/character-badge.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenubarComponent,
     CharactersListingComponent,
-    CharacterBadgeComponent
+    CharacterBadgeComponent,
+    FavoritesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

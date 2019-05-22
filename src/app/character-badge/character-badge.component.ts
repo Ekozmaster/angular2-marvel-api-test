@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CharacterInfo } from './../character.info'
 
 @Component({
   selector: 'app-character-badge',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-badge.component.css']
 })
 export class CharacterBadgeComponent implements OnInit {
+  @Input() charInfo : CharacterInfo;
 
   constructor() { }
 
