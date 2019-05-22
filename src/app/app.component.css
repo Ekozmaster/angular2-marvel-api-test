@@ -1,8 +1,10 @@
 .context-page {
     position: absolute;
     background-color: #090909ff;
+    margin-top: 80px;
     top: 0;
-    bottom: 0;
+    height: auto;
+    min-height: 100% !important;
     left: 12%;
     right: 12%;
     z-index: -1;
@@ -10,7 +12,7 @@
 
 #bottomBar {
     display: table;
-    position: absolute;
+    position: fixed;
     background-color: #181818ff;
     color: #747474ff;
     height: 60px;
@@ -23,7 +25,7 @@
 
 #bottomBar h4 {
     display: table-cell;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family: sans-serif;
     vertical-align: middle;
     text-align: right;
     height: 100%;

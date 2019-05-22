@@ -10,4 +10,5 @@ body {
     background-image: url("assets/marvelWallpaper.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }

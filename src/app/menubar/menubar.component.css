@@ -46,10 +46,14 @@ li:hover #bottomRedBar {
     display: block;
 }
 
-.menubar-navlinks:active {
-    background-image: white;
+.router-link-active {
+    background-color: white;
     cursor: pointer;
     cursor: hand;
+}
+
+.router-link-active #bottomRedBar {
+    display: block;
 }
 
 .menubar-navlinks:hover {

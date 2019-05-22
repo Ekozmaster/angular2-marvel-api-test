@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenubarComponent } from './menubar/menubar.component';
+import { CharactersListingComponent } from './characters-listing/characters-listing.component';
+import { CharacterBadgeComponent } from './character-badge/character-badge.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenubarComponent
+    MenubarComponent,
+    CharactersListingComponent,
+    CharacterBadgeComponent
   ],
   imports: [
     BrowserModule,

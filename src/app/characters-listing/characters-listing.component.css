@@ -1,0 +1,14 @@
+.character-listing-page {
+    margin: 80px 80px;
+    padding: 0;
+}
+
+#pageTitle {
+    color: white;
+    background: linear-gradient(to top, #767676ff, #d4d1d1ff 50%, #d4d1d1ff 100%);
+    font-family: 'Ubuntu';
+    font-size: 38px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}

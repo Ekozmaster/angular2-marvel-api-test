@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64mm"
+   height="64mm"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1546"
+   inkscape:export-filename="/home/eman/Projects/Angular/my-app/src/assets/favoriteIcon.svg.png"
+   inkscape:export-xdpi="50.799999"
+   inkscape:export-ydpi="50.799999"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="favoriteIcon.svg">
+  <defs
+     id="defs1540" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#797979"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70000001"
+     inkscape:cx="116.03841"
+     inkscape:cy="295.7961"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1543">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-233)">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.92212701;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 32.016895,245.27812 c -10.966098,1e-5 -19.855874,8.88979 -19.855899,19.85588 2e-5,10.9661 8.889797,19.85588 19.855899,19.85589 10.966206,1.4e-4 19.856146,-8.88968 19.856166,-19.85589 -2.5e-5,-10.9662 -8.889964,-19.85602 -19.856166,-19.85588 z m -0.09892,0.84324 4.185255,13.46137 14.09514,-0.22393 -11.508845,8.14029 4.568449,13.33593 -11.298384,-8.43036 -11.271447,8.466 4.526242,-13.35033 -11.534594,-8.10376 14.095443,0.17933 z"
+       id="path2211"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccc" />
+    <circle
+       r="29.194159"
+       cy="265.13397"
+       cx="32.016991"
+       id="circle2758"
+       style="fill:none;fill-opacity:1;stroke:#f3ecec;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
