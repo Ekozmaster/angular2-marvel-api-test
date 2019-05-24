@@ -6,7 +6,7 @@
         <div id="textAlignDiv">Home</div>
         <span id="bottomRedBar"></span>
       </a>
-      
+
     </li>
     <li>
       <a routerLink="/favorites" routerLinkActive="router-link-active" class="menubar-navlinks">
@@ -23,7 +23,7 @@
   </ul>
 
   <div id="searchDiv">
-    <input placeholder="Search hero..." class="searchHeroInput" >
-    <button></button>
+    <input placeholder="Search hero..." class="searchHeroInput" [(ngModel)]="searchFilter" (keyup.enter)="onSearchSubmit()">
+    <button routerLink="/search/{{searchFilter}}"></button>
   </div>
 </div>

@@ -3,8 +3,8 @@
     position: relative;
     background-color: #1a1a1aff;
     height: relative;
-    width: 289px;
-    margin: 0px 20px 50px 0px;
+    width: 22%;
+    margin: 0px 20px 5% 0px;
     transition: transform .1s;
 }
 
@@ -37,11 +37,19 @@
     height: 60px;
     align-items: center;
     margin-right: 15px;
-    fill: #fff157ff;
 }
 
 
 #favoriteIcon img {
-    height: 35px;
-    width: 35px;
+    content: url('../../assets/favoriteIconNormal.svg');
+    height: 25px;
+    width: 25px;
+}
+
+#favoriteIcon img:hover {
+  content: url('../../assets/favoriteIconHover.svg');
+}
+
+#favoriteIcon img.isFavorited {
+    content: url('../../assets/favoriteIconFavorited.svg');
 }

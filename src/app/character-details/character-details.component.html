@@ -1,0 +1,13 @@
+<div class="wrapperDiv">
+  <div (click)="goBack()" class="returnButton">
+    <img src="../../assets/backArrowIcon.svg" id="backArrowImg">
+  </div>
+  <div class="mainDetailsPanel" *ngIf="charInfo">
+    <img [src]="charInfo.img_src" id="charThumbnail">
+    <div id="infoBlock">
+      <span id="characterName">{{charInfo.name}}</span>
+      <button id="favoriteButton" (click)="onFavoritesButton()" [class.favorited]="charInfo.favorited">Save in Favorites<img src="../../assets/favoriteIcon.svg"></button>
+      <span id="characterDescription"><span style="color: #a5a5a5ff; font-weight: bold;">Description: </span>{{charInfo.description}}</span>
+    </div>
+  </div>
+</div>

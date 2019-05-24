@@ -1,6 +1,6 @@
 .menubar {
     background-color: #181818ff;
-    height: 80px;
+    height: 70px;
     width: 100%;
     -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.41);
     -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.41);
@@ -77,9 +77,9 @@ ul {
     font-weight: normal;
     font-family: sans-serif;
     font-size: 20px;
-    margin-left: 350px;
+    margin-left: 22%;
 }
-  
+
 li {
     display:inline-block;
     height: 100%;
@@ -93,20 +93,21 @@ li {
     top: 0;
     bottom: 0;
     left: 55%;
-    width: auto;
+    width: 30%;
     display: inline-block;
     padding: 0;
     margin: 0;
 }
 
 #searchDiv button {
+    display: inline-block;
     background-color: white;
     background-image: url("../../assets/searchIcon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
     height: 100%;
-    width: 80px;
+    width: 15%;
     border-radius: 0px;
     border: 0;
     margin: 0;
@@ -114,14 +115,15 @@ li {
 }
 
 .searchHeroInput {
+    display:inline-block;
     background-color: #2e2e2eff;
     color: #858585ff;
     border: 0;
     margin: 0;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 5%;
     height: 100%;
-    width: 450px;
+    width: 80%;
     float: left;
     font-size: 20px;
 }

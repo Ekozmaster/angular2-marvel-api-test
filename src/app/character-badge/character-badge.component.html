@@ -1,5 +1,5 @@
-<div class="characterBadge">
+<div class="characterBadge" routerLink="/detail/{{charInfo.id}}">
   <img [src]="charInfo.img_src" id="charBadge-image">
   <p>{{ charInfo.name }}</p>
-  <div id="favoriteIcon"><img src="../../assets/favoriteIcon.svg"></div>
+  <div id="favoriteIcon" (click)="onFavoritesButton()"><img [class.isFavorited]="charInfo.favorited === true"></div>
 </div>

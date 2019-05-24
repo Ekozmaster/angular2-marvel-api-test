@@ -8,6 +8,10 @@ import { CharactersListingComponent } from './characters-listing/characters-list
 import { CharacterBadgeComponent } from './character-badge/character-badge.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { AboutComponent } from './about/about.component';
+import { CharacterDetailsComponent } from './character-details/character-details.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { AboutComponent } from './about/about.component';
     CharactersListingComponent,
     CharacterBadgeComponent,
     FavoritesComponent,
-    AboutComponent
+    AboutComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

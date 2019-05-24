@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menubar',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menubar.component.css']
 })
 export class MenubarComponent implements OnInit {
-
-  constructor() { }
+  searchFilter: string;
+  constructor( private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onSearchSubmit() {
+    console.log(this.searchFilter);
+    this.router.navigateByUrl('/search/' + this.searchFilter);
   }
 
 }
