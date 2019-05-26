@@ -56,7 +56,7 @@ export class FavoritesComponent implements OnInit {
 
       // create a link to this page with the queryParams representing the items
       // and copy to user's clipboard.
-      FavoritesComponent.copyMessage(`localhost:4200/favorites/?${ itemsQueryParam }`);
+      FavoritesComponent.copyMessage(window.location.href + `/?${ itemsQueryParam }`);
     }
   }
 
