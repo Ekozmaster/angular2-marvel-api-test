@@ -1,0 +1,67 @@
+.favorites-page {
+  margin: 80px 80px;
+  padding: 0;
+}
+
+#pageTitle {
+  display: inline;
+  color: white;
+  background: linear-gradient(to top, #767676ff, #d4d1d1ff 50%, #d4d1d1ff 100%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 38px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.pagerNavigation {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: white;
+}
+
+.pagerNavigation button {
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1aff;
+  color: white;
+  border: 0;
+  padding: 0;
+  margin: 1px;
+  outline: none;
+}
+
+.pagerNavigation button:hover {
+  background-color: #101010ff;
+}
+
+.pagerNavigation button.selected {
+  background-color: #f50000ff;
+}
+
+.shareButton {
+  display: inline-flex;
+  float: right;
+  color: white;
+  font-family: Abel, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(65, 114, 206);
+  width: 40px;
+  padding: 10px 10px;
+  margin: 0;
+  height: fit-content;
+  border: 0;
+  outline: 0;
+  border-radius: 15px 0px 0px 15px;
+  transition: width .1s;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.shareButton:hover {
+  width: 60px;
+  padding: 10px 25px;
+}

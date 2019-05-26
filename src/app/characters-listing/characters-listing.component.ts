@@ -10,7 +10,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./characters-listing.component.css']
 })
 export class CharactersListingComponent implements OnInit {
-  @Input() idsToSearch: number[] = [];
   private listingSize = 16; // 16 characters / page
   // Map used to provide pagination info
   pager: any = {};
@@ -41,7 +40,7 @@ export class CharactersListingComponent implements OnInit {
 
   updatePages(pageNumber: number): void {
     const searchFilter = this.route.snapshot.paramMap.get('searchFilter');
-    this.charRequester.getCharacters(this.idsToSearch, searchFilter, this.listingSize, (pageNumber - 1) * this.listingSize).subscribe(
+    this.charRequester.getCharacters(searchFilter, this.listingSize, (pageNumber - 1) * this.listingSize).subscribe(
       responseData => {
         this.charsList = [];
         for(const curChar of responseData.data.results) {

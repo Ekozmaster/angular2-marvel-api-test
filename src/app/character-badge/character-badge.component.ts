@@ -22,7 +22,7 @@ export class CharacterBadgeComponent implements OnInit {
       favoriteChars = JSON.parse(favoritesData) as number[];
     }
     if (favoriteChars.some(o => o === this.charInfo.id)) {
-      favoriteChars.splice(favoriteChars.indexOf(this.charInfo.id));
+      favoriteChars.splice(favoriteChars.indexOf(this.charInfo.id), 1);
       this.charInfo.favorited = false;
     } else {
       favoriteChars.push(this.charInfo.id);

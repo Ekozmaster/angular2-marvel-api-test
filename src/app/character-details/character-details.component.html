@@ -10,4 +10,8 @@
       <span id="characterDescription"><span style="color: #a5a5a5ff; font-weight: bold;">Description: </span>{{charInfo.description}}</span>
     </div>
   </div>
+  <p id="sectionTitle">Comics</p>
+  <div class="comicsDiv"><div id="comicEventsEntry" *ngFor="let comicEntry of charComics">{{comicEntry.name}}</div></div>
+  <p id="sectionTitle">Events</p>
+  <div class="eventsDiv"><div id="comicEventsEntry" *ngFor="let eventEntry of charEvents">{{eventEntry.name}}</div></div>
 </div>

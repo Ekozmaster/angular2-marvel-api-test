@@ -29,11 +29,7 @@ export class CharactersRequesterService {
   }
 
   // Pass a empty string on 'nameStartsWith' to not filter by name.
-  getCharacters(ids: number[], nameStartsWith: string, limit: number, offset: number): Observable<any> {
-    let idsString: string = '';
-    for(const id of ids) {
-      idsString += id.toString() + ',';
-    }
+  getCharacters(nameStartsWith: string, limit: number, offset: number): Observable<any> {
     // Setting timestamp, limit, offset and name filter params for the request.
     let params = new HttpParams().set('apikey', pubAccessKey )
                       .set('ts', Date.now().toString())
@@ -63,20 +59,21 @@ export class CharactersRequesterService {
   }
 
   // Get multiple characters by a array of IDs
-  getCharactersByID(ids: number[], limit: number, offset: number): Observable<any> {
-    // Setting timestamp, limit, offset and name filter params for the request.
-    let params = new HttpParams().set('apikey', pubAccessKey )
-                      .set('ts', Date.now().toString())
-                      .set('limit', limit.toString())
-                      .set('offset', offset.toString())
-                      .set('id', ids.toString());
-
-    this.httpOptions.params = params;
-
-    return this.http.get<any>(this.marvelAPIUrl, this.httpOptions)
-      .pipe(
-        catchError(this.handleError<any>('getHeroes', []))
+  getCharactersByID(ids: number[], limit: number, offset: number): any[] {
+    let results : any[] = [];
+    for(const charID of ids) {
+      let params = new HttpParams().set('apikey', pubAccessKey )
+      .set('ts', Date.now().toString())
+      .set('limit', limit.toString())
+      .set('offset', offset.toString())
+      .set('id', ids.toString());
+      this.httpOptions.params = params;
+      let result : any;
+      this.http.get<any>(this.marvelAPIUrl, this.httpOptions).subscribe(
+        data => { results.push(data); }
       );
+    }
+    return results;
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

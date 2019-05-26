@@ -12,7 +12,6 @@
 
 .menubar-navlinks {
     display: inline-block;
-    background-color: transparent;
     cursor: pointer;
     cursor: hand;
     height: 100%;
@@ -57,7 +56,7 @@ li:hover #bottomRedBar {
 }
 
 .menubar-navlinks:hover {
-    background-image: linear-gradient(to top, #000000c4, #00000000 40%);
+    background-image: linear-gradient(to top, #0000007a, #00000000 40%);
     cursor: pointer;
     cursor: hand;
 }

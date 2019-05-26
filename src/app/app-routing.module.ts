@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'home', component: CharactersListingComponent },
   { path: 'detail/:id', component: CharacterDetailsComponent },
   { path: 'favorites', component: FavoritesComponent },
+  { path: 'favorites/:ids', component: FavoritesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'search/:searchFilter', component: CharactersListingComponent },
 ];

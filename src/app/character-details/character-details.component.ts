@@ -12,6 +12,8 @@ import { CharactersRequesterService } from '../characters-requester.service';
 })
 export class CharacterDetailsComponent implements OnInit {
   charInfo: CharacterInfo;
+  charComics: any[];
+  charEvents: any[];
   constructor(private route: ActivatedRoute,
               private location: Location,
               private charRequester: CharactersRequesterService) { }
@@ -20,11 +22,15 @@ export class CharacterDetailsComponent implements OnInit {
     this.charRequester.getCharacterByID(+this.route.snapshot.paramMap.get('id')).subscribe(
       responseData => {
         const responseChar = responseData.data.results[0];
+        let charDescription = responseChar.description as string;
+        if(charDescription.length === 0) { charDescription = 'No description available'; }
         this.charInfo = { id: responseChar.id,
                           name: responseChar.name,
                           img_src: responseChar.thumbnail.path + '.' + responseChar.thumbnail.extension,
                           favorited: CharactersRequesterService.checkCharacterIsFavorited(responseChar.id),
-                          description: responseChar.description };
+                          description: charDescription };
+        this.charComics = responseChar.comics.items;
+        this.charEvents = responseChar.events.items;
       }
     );
   }

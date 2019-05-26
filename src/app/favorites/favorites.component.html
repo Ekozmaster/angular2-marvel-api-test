@@ -1,1 +1,18 @@
-<app-characters-listing></app-characters-listing>
+<div class="favorites-page">
+  <div><p id="pageTitle">Favorites ></p><a class="shareButton" *ngIf="charsList.length > 0" (click)="onShareButton()">Share</a></div>
+  <app-character-badge [charInfo]="charInfo" *ngFor="let charInfo of charsList"></app-character-badge>
+
+  <div class="pagerNavigation" *ngIf="pager.totalPages > 1">
+      <span *ngIf="pager.startPage !== 1"><button
+          (click)="onSelectPage(1)">1</button>
+          ...
+      </span>
+      <button
+          *ngFor="let pageIndex of pagesIndexes"
+          (click)="onSelectPage(pageIndex)"
+          [class.selected]="pageIndex === pager.currentPage">{{pageIndex}}</button>
+      <span *ngIf="pager.endPage !== pager.totalPages" >...<button
+          (click)="onSelectPage(pager.totalPages)">{{pager.totalPages}}</button>
+      </span>
+  </div>
+</div>

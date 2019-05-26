@@ -16,9 +16,10 @@
 .characterBadge p {
     display: flex;
     font-family: 'Avantgarde', TeX Gyre Adventor, URW Gothic L, sans-serif;
-    height: 60px;
+    height: fit-content;
     align-items: center;
     justify-content: center;
+    margin: 5px 0 0;
     color: white;
 }
 
@@ -31,12 +32,11 @@
 /* TODO: Make favorite icon yellow when character is favorites*/
 #favoriteIcon {
     display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 60px;
+    height: fit-content;
+    width:fit-content;
+    margin: 0 auto 5px;
+    padding: 0;
     align-items: center;
-    margin-right: 15px;
 }
 
 
