@@ -10,7 +10,7 @@ const pubAccessKey = 'bcead32b5872a5c7ea802173b3f165f7';
   providedIn: 'root'
 })
 export class CharactersRequesterService {
-  private marvelAPIUrl = 'http://gateway.marvel.com/v1/public/characters';
+  private marvelAPIUrl = 'https://gateway.marvel.com/v1/public/characters';
   private httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json', Accept: '*/*' }),
     params: new HttpParams().set('apikey', pubAccessKey )
